@@ -1,13 +1,18 @@
 :root {
-    --primary-color: #d7fffe;
-    --secondary-color: #27fdf5;
-    --tertiary-color: #f765b8;
+    --primary-color: #040B15;
+    --secondary-color: #0D233A;
+    --tertiary-color: #F7981D;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  body {
+      background-color: var(--primary-color);
+      font-family: Helvetica, Arial, sans-serif;
   }
 
 
@@ -51,3 +56,69 @@ header nav ul li a {
 }
 
 /* Header Style Ends */
+
+/* Hero Style Starts */
+
+.hero {
+    background-image: url('../images/motorcycle.jpg');
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+}
+
+.hero-info {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 5;
+}
+
+/* About me and work section starts */
+
+section {
+    padding: 20px;
+}
+
+.section-title{
+    padding: 20px;
+}
+
+.section-start {
+    margin: 15px;
+    color: var(--tertiary-color);
+}
+
+
+.bio p {
+    padding: 20px;
+    line-height: 1.2;
+}
+
+.section-title img {
+    height: 200px;
+    width: 200px;
+}
+
+.reach-me address {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.reach-me address a {
+    padding: 30px;
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.reach-me address p {
+    padding: 30px;
+}
