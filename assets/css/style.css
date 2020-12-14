@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #040B15;
-    --secondary-color: #0D233A;
-    --tertiary-color: #F7981D;
+    --primary-color: #BBDBF7;
+    --secondary-color: #64ABE3;
+    --tertiary-color:  #C2B280;
 }
 
 * {
@@ -11,7 +11,6 @@
   }
 
   body {
-      background-color: var(--primary-color);
       font-family: Helvetica, Arial, sans-serif;
   }
 
@@ -64,61 +63,54 @@ header nav ul li a {
     background-size: cover;
     background-position: 80%;
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
 }
 
 .hero-info {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 5;
+    width: 35%;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 30px;
+    line-height: 12;
 }
+
 
 /* About me and work section starts */
 
-section {
-    padding: 20px;
+
+.section-start {
+    border-bottom: 3px solid var(--tertiary-color);
+    display: flex;
 }
 
 .section-title{
+    background-color: var(--primary-color);
+    width: 100%;
     padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    padding: 0 15px 0 0;
 }
 
 .section-start {
-    margin: 15px;
     color: var(--tertiary-color);
+
+}   
+
+.work-img img {
+    border: 2px solid var(--secondary-color);
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
 }
 
-
-.bio p {
-    padding: 20px;
-    line-height: 1.2;
-}
-
-.section-title img {
-    height: 200px;
-    width: 200px;
-}
-
-.reach-me address {
+.section-title address {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-
 }
 
-.reach-me address a {
-    padding: 30px;
-    text-decoration: none;
-    color: var(--tertiary-color);
-}
-
-.reach-me address p {
-    padding: 30px;
-}
